@@ -1,0 +1,65 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.App {
+	font-size: 16px;
+	padding: 1rem 0.5rem;
+	color: rgb(33, 37, 41);
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.searchable_user {
+	width: 312px;
+	height: 38px;
+	font-size: 16px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(206, 212, 218);
+	padding: 6px 6px 6px 12px;
+}
+.searchable_user:focus {
+	border: 1px solid #7952b3;
+	box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+.searchable_container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.list_wrapper{
+	max-height: 300px;
+	width: 330px;
+    overflow-y:auto;
+    overflow-x: hidden;
+	box-shadow: 0 0 0 3px rgba(211, 211, 211, 0.952);
+}
+.list_wrapper .empty{
+	min-height: 100px;
+	overflow-y: hidden;
+	text-align: center;
+	padding-top: 25%;
+}
+.list_item{
+width:312px;
+padding: .5rem .8rem;
+}
+.list_item div{
+padding: .5rem .2rem;
+}
+.list_item.hover{
+	background-color: rgb(255, 255, 169);
+}
+
+.highlight {
+	color: blue;
+	font-weight: bold;
+  }
+
+  strong.highlight::before{
+	content: "\2022";
+  }
